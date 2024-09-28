@@ -1,0 +1,5 @@
+guia de referencia mozilla
+https://developer.mozilla.org/pt-BR/
+
+guia de referencia ECMA 
+https://ecma-international.org/
