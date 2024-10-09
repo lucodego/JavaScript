@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgba(36, 26, 179, 0.534);
+            color: rgb(255, 255, 255);
+            font: bold 18pt arial;
+        }
+    </style>
 </head>
 <body>
     <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //var p1 = document.getElementsByid('p')[1]//Pega todos os elementos com a seleção
+        /*document.write('Está escrito assim ' + p1.innerText)
+        corpo.style.backgroundColor = 'gray'
+        p1.style.color = ' blue'
+        document.write(p1.innerHTML)*/
+        //var d = window.document.getElementById('msg')
+        //d.style.backgroundColor = 'green'
+        //d.innerText = 'Estou aguardando...'
+        //window.document.getElementById('msg').innerText ='Olá'//Posso fazer o percurso completo em vez de usar varias linhas
+        var d = document.querySelector('div#msg')//Usa forma de CSS
+        d.innerHTML = 'Olá'
+    </script>
 </body>
 </html>
