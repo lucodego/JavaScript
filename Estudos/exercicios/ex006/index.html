@@ -17,11 +17,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick=clicar() onmouseenter=entrar() onmouseout=sair()> 
+    <div id="area"> 
         interaja ...
     </div>
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
         function clicar(){
             //Só vai ser executado quando clicar;
             a.innerText = 'Clicou!'
@@ -29,11 +33,13 @@
             a.style.backgroundColor = 'black'
         }
         function entrar(){
+            //Executa quando passar o mouse em cima
             a.innerText = 'Entrou!'
             a.style.backgroundColor = 'gray'
             a.style.color = 'blue'
         }
         function sair(){
+            //Executa quando sair o mouse de cima
             a.innerText = 'Saiu!'
             a.style.backgroundColor = 'green'
             a.style.color = 'white'
