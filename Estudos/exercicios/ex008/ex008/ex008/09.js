@@ -5,5 +5,10 @@ if(vel >= 60){ //condição simples
 }else{console.log('Dirija sempre usando cinto de segurança')}
 
 
-var país = 'EUA'
-consol
+var pais = 'EUA'
+console.log(`Vivendo em ${pais}`)
+if(pais == 'Brasil'){
+    console.log('Você é brasileiro!!')
+} else{
+    console.log('Você é estrangeiro!!')
+}
