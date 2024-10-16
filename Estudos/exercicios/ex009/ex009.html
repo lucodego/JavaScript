@@ -13,14 +13,15 @@
 
     </div>
     <script>
+   
     function clicar(){
-        var pais = document.querySelector('p#txtp')
+        var pais = document.getElementById('txtp')
         var res = document.getElementById('res')
-        
-        if (pais =! 'brasil'){
-            res.innerHTML = 'Você é estrnageiro!!'
+
+        if ((pais.value) =! 'brasil'){
+            res.innerHTML = 'Você é estrangeiro!!'
         } else{
-            res.innerHTML = 'você é brasileiro'
+            res.innerHTML = 'Você é brasileiro'
         }
     }
     </script>
