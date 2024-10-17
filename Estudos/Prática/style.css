@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background: rgb(61, 61, 255);
+    background: rgba(255, 181, 21, 0.664);
     font: normal 15pt Arial;
 }
 header{
@@ -20,4 +20,7 @@ section{
 footer{
     font-style: italic;
     text-align: center;
+}
+img{
+    
 }
