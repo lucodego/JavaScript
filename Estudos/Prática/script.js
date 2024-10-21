@@ -3,8 +3,7 @@ function carregar(){
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
     var agora = new Date()
-    //var hora = agora.getHours()
-    var hora = 20
+    var hora = agora.getHours()
     msg.innerHTML = `<strong>Agora são ${hora}</strong>`
     if (hora >= 0 && hora < 12){
         img.src = 'dia.png'
