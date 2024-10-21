@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(72, 150, 252);
+    font: normal 1em Arial;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+#idade{
+    padding-top: 20px;
+    text-align: center;
+}
+#foto{
+    padding-top: 30px;
+}
+footer{
+    text-align: center;
+    color: white;
+}
