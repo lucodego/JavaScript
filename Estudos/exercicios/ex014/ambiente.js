@@ -1,8 +1,8 @@
  var c = 1
-do {
+ while (c <= 5){
     console.log(`Tudo bem ?`)
     c += 1
- } while (c <= 5)
+ } 
 
 while(c <= 5){
 console.log(`Tudo bem ?`)
