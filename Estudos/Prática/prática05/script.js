@@ -1,23 +1,29 @@
-var num = document.getElementById('num')
-    var tab = document.getElementById('tabela')
-    var inf = document.getElementById('inf')
-    var n = Number(num.value)
-    var cont = cont++
-    var vetor = []
-    
-function analisar(){
-    
-    if(isNumero(n) && !isLista(n)){
-        vetor.push(n)
-        var item = document.createElement('Option')
-        item.innerHTML = `Valor ${n} adicionado`
-        inf.appendChild(item)
-    } else {
-        alert('Digite um valor valido')
+let num = document.getElementById('num')
+let numero = Number(num)
+let tab = document.getElementById('inf')
+let res = document.getElementById('res')
+let vetor = []
+
+function isNumero(n){
+    if (Number(n) >= 1 && Number(n) <= 100){
+        return true
+    } else{
+        return false
     }
 }
-function finalizar(){
-    var res = document.getElementById('res')
-    res.innerHTML = `Ao todo temos ${cont} números cadastrados`
 
+function inLista(n, l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    } else{
+        return false
+    }
+}
+
+function analisar(){
+    if(isNumero(numero) && inLista(numero, vetor)){
+        alert('Tudo ok')
+    } else{
+        alert('Valor inválido ou ja encontrado na lista!!')
+    }
 }

@@ -17,4 +17,4 @@ var pos = 0
 for(pos in num){
     console.log(`A posição ${pos} tem valor ${num[pos]}`)
 }
-console.log(num.indexOf(3))
+console.log(num.indexOf(9))
