@@ -1,19 +1,19 @@
-function analisar(){
-    var num = document.getElementById('num')
+var num = document.getElementById('num')
     var tab = document.getElementById('tabela')
     var inf = document.getElementById('inf')
     var n = Number(num.value)
     var cont = cont++
     var vetor = []
-    if(n > 100){
-        alert('Digite um valor valido')
-    } else {
-        var vetor = []
+    
+function analisar(){
+    
+    if(isNumero(n) && !isLista(n)){
         vetor.push(n)
         var item = document.createElement('Option')
         item.innerHTML = `Valor ${n} adicionado`
         inf.appendChild(item)
-        
+    } else {
+        alert('Digite um valor valido')
     }
 }
 function finalizar(){

@@ -17,6 +17,9 @@ section{
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.486) 5px 5px 10px;
 }
+select#inf{
+    width: 200px;
+}
 footer{
     font-style: italic;
     text-align: center;
