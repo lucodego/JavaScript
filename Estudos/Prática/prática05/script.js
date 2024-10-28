@@ -1,5 +1,4 @@
 let num = document.getElementById('num')
-let numero = Number(num)
 let tab = document.getElementById('inf')
 let res = document.getElementById('res')
 let vetor = []
@@ -21,9 +20,17 @@ function inLista(n, l){
 }
 
 function analisar(){
-    if(isNumero(numero) && inLista(numero, vetor)){
-        alert('Tudo ok')
+    if(isNumero(num.value) || inLista(num.value, vetor)){
+        vetor.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado`
+        tab.appendChild(item)
+
     } else{
         alert('Valor inválido ou ja encontrado na lista!!')
     }
+}
+
+function finalizar(){
+    
 }
